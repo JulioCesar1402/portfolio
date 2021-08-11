@@ -1,0 +1,31 @@
+.body {
+  margin: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subTitle {
+  color: #6E7191;
+}
+
+.image {
+  padding-left: 30px;
+  border-radius: 5px;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+.intro {
+  display: flex;
+}
+
+.infoIcon {
+  padding-right: 2%;
+}
+
+.infoIcon:hover {
+  transition: 0.5s;
+  color:#0096B7;
+  /* color: #4E4B66; */
+}

@@ -10,6 +10,11 @@ function NavBarRight() {
           <i class='bx bx-home-alt bx-sm iconStyle'></i>
         </Link>
       </li>
+      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
+        <Link class="nav-link active" aria-current="page" to="/projects">
+        <i class='bx bx-folder bx-sm iconStyle'></i>
+        </Link>
+      </li>
       <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Games">
         <Link class="nav-link active" aria-current="page" to="/games">
           <i class='bx bx-joystick-button bx-sm iconStyle'></i>

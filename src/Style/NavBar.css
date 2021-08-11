@@ -9,12 +9,12 @@ nav {
   height: 3rem;
 }
 
-.ghostIcon {
-  color:#1CC8EE;
+.logoIcon {
+  color:#0096B7;
 }
 
-.ghostIcon:hover {
-  color:#0096B7;
+.logoIcon:hover {
+  color:#1CC8EE;
   transition: 0.5s;
 }
 
@@ -24,7 +24,7 @@ nav {
 }
 
 .iconStyle:hover {
-  border: 0px solid #D9DBE9;
+  border: 0px solid;
   border-radius: 5px;
   background-color: #D9DBE9;
 }

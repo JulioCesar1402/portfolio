@@ -5,7 +5,7 @@ import '../../Style/NavBar.css'
 function NavItemLeft() {
   return (
     <Link class="navbar-brand" to="/">
-      <i class='bx bxs-ghost bx-md ghostIcon' ></i>
+      <i class='bx bxs-cube-alt bx-md logoIcon'></i>
     </Link>
   );
 }

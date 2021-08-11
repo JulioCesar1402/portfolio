@@ -1,0 +1,22 @@
+.contact-body {
+  flex-direction: column;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.net-name {
+  padding-top: 18px;
+}
+
+.parhList {
+  display: flex;
+}
+
+.networkTitle {
+  margin-top: 50px;
+}

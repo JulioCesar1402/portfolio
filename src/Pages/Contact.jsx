@@ -1,5 +1,4 @@
 import React from 'react';
-import Photo from '../photo.jpeg';
 import '../Style/Contact.css'
 
 function Contact() {

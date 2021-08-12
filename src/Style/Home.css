@@ -1,12 +1,18 @@
 .body {
-  margin: 12%;
+  padding: 12%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.title {
+  /* font-size: max(100px, 50%); */
+  font-size: max(50px, 1vmin);
+}
+
 .subTitle {
   color: #6E7191;
+  font-size: max(25px, 1vmin);
 }
 
 .randowImage {

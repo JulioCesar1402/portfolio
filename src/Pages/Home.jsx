@@ -5,7 +5,7 @@ function Home() {
   return (
     <body className="body">
       <div>
-        <div className="intro">
+        <div className="intro title">
           <i class='bx bxs-info-square bx-lg infoIcon' ></i>
           <h1>I'm Julio Cesar</h1>
         </div>

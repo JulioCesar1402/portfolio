@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Style/Home.css'
+
 function Home() {
   return (
     <body className="body">

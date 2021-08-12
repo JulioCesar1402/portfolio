@@ -4,9 +4,11 @@ import '../../Style/NavBar.css'
 
 function NavItemLeft() {
   return (
-    <Link class="navbar-brand" to="/">
-      <i class='bx bxs-cube-alt bx-md logoIcon'></i>
-    </Link>
+    <div className="navbarLeft">
+      <Link to="/">
+        <i class='bx bxs-cube-alt bx-md logoIcon'></i>
+      </Link>
+    </div>
   );
 }
 

@@ -4,29 +4,29 @@ import '../../Style/NavBar.css'
 
 function NavBarRight() {
   return (
-    <ul class="navbar-nav">
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">
-        <Link class="nav-link active" aria-current="page" to="/">
+    <ul className="navbarRight">
+      <li className="navItem" title="Home">
+        <Link to="/">
           <i class='bx bx-home-alt bx-sm iconStyle'></i>
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
-        <Link class="nav-link active" aria-current="page" to="/projects">
+      <li className="navItem" title="Projects">
+        <Link to="/projects">
         <i class='bx bx-folder bx-sm iconStyle'></i>
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Games">
-        <Link class="nav-link active" aria-current="page" to="/games">
+      <li className="navItem" title="Games">
+        <Link to="/games">
           <i class='bx bx-joystick-button bx-sm iconStyle'></i>
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact">
-        <Link class="nav-link active" aria-current="page" to="/contact">
+      <li className="navItem" title="Contact">
+        <Link to="/contact">
           <i class='bx bx-paper-plane bx-sm iconStyle'></i>
         </Link>
       </li>
-      <li class="nav-item " data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
-        <Link class="nav-link active" aria-current="page" to="/about">
+      <li className="navItem" title="About">
+        <Link to="/about">
           <i class='bx bx-user bx-sm iconStyle'></i>
         </Link>
       </li>

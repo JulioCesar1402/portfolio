@@ -1,7 +1,7 @@
 .body {
-  margin: 15%;
+  margin: 12%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -9,11 +9,10 @@
   color: #6E7191;
 }
 
-.image {
-  padding-left: 30px;
-  border-radius: 5px;
-  border: 0px solid;
-  border-radius: 5px;
+.randowImage {
+  /* padding-left: 30px; */
+  border: none;
+  border-radius: 20px;
 }
 
 .intro {

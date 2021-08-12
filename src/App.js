@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer';
 import MainRouter from './Router/MainRouter';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></link>
       <NavBar />
       <MainRouter />
+      <Footer />
     </div>
   );
 }

@@ -50,7 +50,17 @@ nav {
   padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1180px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .randowImage {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
   .body {
     padding: 0;
     margin: 0;
@@ -63,20 +73,28 @@ nav {
   .net-name {
     display: none;
   }
-}
-
-@media (max-width: 1180px) {
-  .body {
-    flex-direction: column;
-  }
 
   .randowImage {
-    margin-top: 30px;
+    display: none;
+  }
+
+  .FooterItens {
+    display: flex;
+    list-style-type: none;
+    background-color: #EFF0F6;
+    justify-content: space-evenly;
+
+    /* averiguar */
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
   }
 }
 
-@media (max-width: 700px) {
-  .randowImage {
+@media only screen and (min-width: 700px) {
+  .FooterItens {
     display: none;
   }
 }

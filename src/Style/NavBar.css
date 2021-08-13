@@ -13,11 +13,11 @@ nav {
   background-color: #EFF0F6;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logoIcon {
   color:#0096B7;
-  /* margin-left: 10px; */
 }
 
 .logoIcon:hover {
@@ -31,7 +31,7 @@ nav {
 }
 
 .iconStyle:hover {
-  border: 0px solid;
+  border: none;
   border-radius: 5px;
   background-color: #D9DBE9;
 }
@@ -39,11 +39,14 @@ nav {
 .navbarRight {
   list-style-type: none;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
 }
 
 .navItem {
-  padding: 10px;
+  margin-top: 2%;
+  padding-right: 2%;
 }
 
 .navbarLeft {
@@ -62,11 +65,12 @@ nav {
 
 @media (max-width: 700px) {
   .body {
-    padding: 0;
+    background-color: #1CC8EE;
+    padding: 30%;
     margin: 0;
   }
 
-  .navbarRight {
+  .navBar {
     display: none;
   }
 
@@ -83,14 +87,29 @@ nav {
     list-style-type: none;
     background-color: #EFF0F6;
     justify-content: space-evenly;
-
-    /* averiguar */
     position: fixed;
     margin: 0;
     bottom: 0;
     width: 100%;
     color: white;
   }
+
+  .navItemTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #6E7191;
+    margin-bottom: -10px;
+    width: 100%;
+  }
+
+  .navItemTag:hover {
+    color:#0096B7;
+    transition: 0.5s;
+  }
+
 }
 
 @media only screen and (min-width: 700px) {

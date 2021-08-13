@@ -185,9 +185,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 15px 32px;
-    /* margin: 10px 2px; */
-    /* width: 100px;
-    height: 50px; */
+    font-weight: bold;
     background-color: #0096B7;
     color: #fafafa;
     border: none;

@@ -93,6 +93,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #6E7191;
   font-size: 100%;
 }

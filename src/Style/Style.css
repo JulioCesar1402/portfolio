@@ -96,6 +96,7 @@ nav {
   align-items: center;
   color: #6E7191;
   font-size: 100%;
+  margin-top: 2%;
 }
 
 .randowImage {
@@ -122,6 +123,125 @@ nav {
   /* color: #4E4B66; */
 }
 
+.bodyAbout {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerAbout {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1vw;
+}
+
+.imageThumb {
+  flex-shrink: 0;
+
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.MyIcon {
+  width: 8%;
+
+  border-radius: 20px;
+  border: 5px solid white;
+
+  position: absolute;
+  top: 15vw;
+  left: 28%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-left: 25%;
+}
+
+.icon, .subtitle-about {
+  color: #6E7191;
+}
+
+.contact-body {
+  flex-direction: column;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.net-name {
+  padding-top: 2%;
+}
+
+.parhList {
+  display: flex;
+}
+
+.networkTitle {
+  margin-top: 50px;
+}
+
+.contactIntrodution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary {
+  /* background-color: #0096B7; */
+  margin-top: 1%;
+  margin-right: 35%;
+}
+
+.knowledge {
+  margin-top: 2%;
+  margin-left: 24.5%;
+  display: flex;
+  align-items: center;
+}
+
+.bxl-javascript:hover {
+  transition: 0.5s;
+  color: rgb(218, 218, 80);
+}
+
+.bxl-html5:hover {
+  transition: 0.5s;
+  color: orangered;
+}
+
+.bxl-css3:hover {
+  transition: 0.5s;
+  color: #0096B7;
+}
+
+.bxl-react:hover {
+  transition: 0.5s;
+  color: #1CC8EE;
+}
+
+.bxl-redux:hover {
+  transition: 0.5s;
+  color: blueviolet;
+}
+
+.bxl-git:hover {
+  transition: 0.5s;
+  color: orangered;
+}
+
+/* .contact-about {
+
+} */
+
 @media (max-width: 1180px) {
   .body {
     flex-direction: column;
@@ -129,6 +249,20 @@ nav {
 
   .randowImage {
     margin-top: 30px;
+  }
+
+  .MyIcon {
+    top: 18vw;
+  }
+
+  .about {
+    margin-top: 6%;
+  }
+
+  .headerAbout {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
   }
 }
 
@@ -184,7 +318,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 32px;
+    padding: 15px 35px;
     font-weight: bold;
     background-color: #0096B7;
     color: #fafafa;
@@ -198,6 +332,43 @@ nav {
     background-color: #1CC8EE;
     transition: 0.5s;
   }
+  .bodyAbout {
+    margin-top: 20%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+  }
+  .imageThumb {
+    flex-shrink: 0;
+    width: 80%;
+    /* height: min(33vw, 199px); */
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .MyIcon {
+    width: 20%;
+    border-radius: 20px;
+    border: 5px solid white;
+    position: absolute;
+    top: 30vw;
+    left: 15%;
+  }
+
+  .about {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .summary {
+    font-size: 12px;
+  }
+
+  .knowledge {
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+
 }
 
 @media only screen and (min-width: 700px) {

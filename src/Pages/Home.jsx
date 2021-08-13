@@ -12,7 +12,8 @@ function Home() {
             <h1 className="">I'm Julio Cesar</h1>
           </div>
           <div className="subTitle">
-            <h4>Currently studying Software Development at Trybe</h4>
+            <h4>Currently studying Software Development</h4>
+            <h4>at Trybe</h4>
           </div>
         </div>
         <img src="https://picsum.photos/536/354" alt="randow" className="randowImage" title="Don't like it? Try reloading the page ;)"/>

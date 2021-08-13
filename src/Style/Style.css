@@ -90,6 +90,8 @@ nav {
 }
 
 .subTitle {
+  display: flex;
+  justify-content: center;
   color: #6E7191;
   font-size: 100%;
 }

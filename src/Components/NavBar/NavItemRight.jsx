@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../Style/NavBar.css'
 
 function NavBarRight() {
   return (

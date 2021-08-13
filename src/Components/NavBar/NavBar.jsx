@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../Style/NavBar.css'
 import NavItemLeft from './NavItemLeft';
 import NavBarRight from './NavItemRight';
 

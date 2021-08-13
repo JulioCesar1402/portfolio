@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../Style/NavBar.css';
 
 function FooterItens() {
   return (
@@ -12,21 +11,9 @@ function FooterItens() {
         </Link>
       </li>
       <li className="navItem" title="Projects">
-        <Link to="/projects" className="navItemTag">
-          <i class='bx bx-folder bx-sm'></i>
-          <p className="textLink">Projects</p>
-        </Link>
-      </li>
-      <li className="navItem" title="Games">
-        <Link to="/games" className="navItemTag">
-          <i class='bx bx-joystick-button bx-sm'></i>
-          <p className="textLink">Games</p>
-        </Link>
-      </li>
-      <li className="navItem" title="Contact">
-        <Link to="/contact" className="navItemTag">
-          <i class='bx bx-paper-plane bx-sm'></i>
-          <p className="textLink">Contact</p>
+        <Link to="/explore" className="navItemTag">
+          <i class='bx bx-compass bx-sm'></i>
+          <p className="textLink">Explore</p>
         </Link>
       </li>
       <li className="navItem" title="About">

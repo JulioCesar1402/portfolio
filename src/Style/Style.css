@@ -7,6 +7,10 @@
 
 .Link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #6E7191;
 }
 
 .App {
@@ -199,6 +203,7 @@ nav {
   /* background-color: #0096B7; */
   margin-top: 1%;
   margin-right: 35%;
+  color: #4E4B66;
 }
 
 .knowledge {
@@ -211,37 +216,31 @@ nav {
 .bxl-javascript:hover {
   transition: 0.5s;
   color: rgb(218, 218, 80);
-  cursor: pointer;
 }
 
 .bxl-html5:hover {
   transition: 0.5s;
   color: orangered;
-  cursor: pointer;
 }
 
 .bxl-css3:hover {
   transition: 0.5s;
   color: #0096B7;
-  cursor: pointer;
 }
 
 .bxl-react:hover {
   transition: 0.5s;
   color: #1CC8EE;
-  cursor: pointer;
 }
 
 .bxl-redux:hover {
   transition: 0.5s;
   color: blueviolet;
-  cursor: pointer;
 }
 
 .bxl-git:hover {
   transition: 0.5s;
   color: orangered;
-  cursor: pointer;
 }
 
 .contact-about {
@@ -301,7 +300,14 @@ nav {
     border-radius: 8px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
   }
+
+  .explore-name {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -346,13 +352,12 @@ nav {
     padding-bottom: 2vw;
   }
 
-  .navItemTag:hover {
+  .active {
     color:#0096B7;
-    transition: 0.5s;
   }
 
   .startButton {
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -370,12 +375,14 @@ nav {
     background-color: #1CC8EE;
     transition: 0.5s;
   }
+
   .bodyAbout {
     margin-top: 20%;
     /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
   }
+
   .imageThumb {
     flex-shrink: 0;
     width: 80%;
@@ -408,13 +415,30 @@ nav {
   }
 
   .contact-about {
-    padding: 8% 14%;
-    margin-right: 20vw;
+    display: none;
+  }
+
+  .explore-option {
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid #1CC8EE;
+    padding: 6vh 14vw;
+    justify-content: space-around;
+    margin: 1% 11%;
+    font-size: 35px;
+    align-items: center;
+  }
+
+  .explore-body {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .FooterItens, .startButton {
+  .explore-body, .FooterItens, .startButton {
     display: none;
   }
 }

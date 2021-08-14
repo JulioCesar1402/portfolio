@@ -5,7 +5,7 @@ function NavItemLeft() {
   return (
     <div className="navbarLeft">
       <Link to="/">
-        <i class='bx bxs-cube-alt bx-md logoIcon'></i>
+        <i className='bx bxs-cube-alt bx-md logoIcon'></i>
       </Link>
     </div>
   );

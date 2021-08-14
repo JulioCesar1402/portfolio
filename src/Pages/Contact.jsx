@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import MainContext from '../Context/MainContext';
 import '../Style/Contact.css'
 
-function Contact() {
+function Contact({ location: { pathname } }) {
+  const { setContactNavBar,
+    setAboutNavBar,
+    setHomeActive,
+    setExploreActive,
+    setAboutActive, } = useContext(MainContext);
+  useEffect(() => {
+    if (pathname) {
+      setContactNavBar(true);
+      setAboutNavBar(false);
+      setHomeActive('');
+      setExploreActive('');
+      setAboutActive('');
+    }
+  }, [pathname, setContactNavBar, setAboutNavBar, setHomeActive, setExploreActive, setAboutActive])
   return (
     <div className="contact-body body">
       <div className="contactIntrodution">
@@ -12,15 +27,15 @@ function Contact() {
         <h3 className="networkTitle">Networks:</h3>
         <div className="parhList">
           <a href="https://www.linkedin.com/in/julio-cesar-monteiro-alves/?locale=en_US" className="networks logoIcon">
-            <i class='bx bxl-linkedin-square bx-md'></i>
+            <i className='bx bxl-linkedin-square bx-md'></i>
             <p className="net-name"> Linkedin </p>
           </a>
           <a href="https://github.com/JulioCesar1402" className="networks logoIcon">
-            <i class='bx bxl-github bx-md'></i>
+            <i className='bx bxl-github bx-md'></i>
             <p className="net-name"> GitHub </p>
           </a>
           <a href="https://wa.me/qr/LIZRD5VU23K2M1" className="networks logoIcon">
-            <i class='bx bxl-whatsapp bx-md' ></i>
+            <i className='bx bxl-whatsapp bx-md' ></i>
             <p className="net-name"> WhatsApp </p>
           </a>
         </div>

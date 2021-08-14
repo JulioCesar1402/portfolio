@@ -9,12 +9,12 @@ import Explore from '../Pages/Explore';
 
 const MainRouter = () => (
   <Switch>
-    <Route exact path="/" render={ () => <Home /> } />
-    <Route exact path="/projects" render={ () => <Projects /> } />
-    <Route exact path="/games" render={ () => <Games /> } />
-    <Route exact path="/contact" render={ () => <Contact /> } />
-    <Route exact path="/about" render={ () => <About /> } />
-    <Route exact path="/explore" render={ () => <Explore /> } />
+    <Route exact path="/" render={ (props) => <Home {...props} /> } />
+    <Route exact path="/projects" render={ (props) => <Projects {...props} /> } />
+    <Route exact path="/games" render={ (props) => <Games {...props} /> } />
+    <Route exact path="/contact" render={ (props) => <Contact {...props} /> } />
+    <Route exact path="/about" render={ (props) => <About {...props} /> } />
+    <Route exact path="/explore" render={ (props) => <Explore {...props} /> } />
   </Switch>
 );
 export default MainRouter;

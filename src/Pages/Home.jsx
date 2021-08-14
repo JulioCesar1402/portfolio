@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import MainContext from '../Context/MainContext';
 import '../Style/Home.css'
 
-function Home() {
+function Home({ location: { pathname } }) {
+  const { setHomeActive, setAboutActive, setExploreActive, setHomeNavBar } = useContext(MainContext);
+  useEffect(() => {
+    if (pathname) {
+      setHomeActive('active');
+      setExploreActive('');
+      setAboutActive('');
+      setHomeNavBar(true);
+    }
+  }, [pathname, setHomeActive, setHomeNavBar])
   return (
     <div className="body">
       <div className="subBody">
@@ -18,7 +28,7 @@ function Home() {
         </div>
         <img src="https://picsum.photos/536/354" alt="randow" className="randowImage" title="Don't like it? Try reloading the page ;)"/>
       </div>
-      <Link to="/explore" className="Link">
+      <Link to="/explore" className="Link" onClick={() => setHomeActive('')}>
         <button type="button" className="startButton">
           <i className='bx bxs-right-arrow bx-sm' ></i>
           <p>Get start</p>

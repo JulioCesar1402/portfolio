@@ -4,7 +4,7 @@ import NavBarRight from './NavItemRight';
 
 function NavBar() {
   return (
-    <nav class="navBar">
+    <nav className="navBar">
       <NavItemLeft />
       <NavBarRight />
     </nav>

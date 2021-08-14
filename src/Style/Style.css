@@ -266,6 +266,27 @@ nav {
   transition: 0.5s;
 }
 
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7vw 3vw;
+  width: 44vw;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 6px 16px;
+}
+
 @media (max-width: 1180px) {
   .body {
     flex-direction: column;
@@ -420,13 +441,17 @@ nav {
 
   .explore-option {
     display: flex;
-    border-radius: 8px;
-    border: 2px solid #1CC8EE;
+    /* border-radius: 8px; */
+    border-bottom: 2px solid #1CC8EE;
     padding: 6vh 14vw;
     justify-content: space-around;
     margin: 1% 11%;
     font-size: 35px;
     align-items: center;
+  }
+
+  .explore-option:nth-child(3) {
+    border: none;
   }
 
   .explore-body {

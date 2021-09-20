@@ -13,6 +13,11 @@
   color: #6E7191;
 }
 
+.link-to-projects {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -274,7 +279,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   margin: 7vw 3vw;
-  width: 44vw;
+  width: 43vw;
 }
 
 /* On mouse-over, add a deeper shadow */

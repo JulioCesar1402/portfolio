@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import React/* , { useContext } */ from 'react';
 import Home from '../Pages/Home';
-import Games from '../Pages/Games';
+import Games from '../Pages/Game/Games';
 import Contact from '../Pages/Contact';
 import About from '../Pages/About';
 import Projects from '../Pages/Projects';

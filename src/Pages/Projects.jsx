@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react';
 import MainContext from '../Context/MainContext';
 import '../Style/Projects.css'
 import site from '../Images/siteTest.jpeg'
+import todo from '../Images/todo.png'
+import pomodoro from '../Images/pomodoro.png'
 
 function Projects({ location: { pathname } }) {
   const { setProjectsNavBar,
@@ -19,20 +21,24 @@ function Projects({ location: { pathname } }) {
   return (
     <section style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
       <div style={{display: "flex", width: "10%"}}>
-        <div class="card">
-          <img src={site} alt="Avatar" />
-          <div class="container">
-            <h4><b>Site 1</b></h4>
-            <p>Architect & Engineer</p>
+        <a href="https://juliocesar1402.github.io/Todo-list/" className="link-to-projects">
+          <div class="card">
+            <img src={todo} alt="Avatar" />
+            <div class="container">
+              <h4><b>ToDo List</b></h4>
+              <p>A website to organize your tasks</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src={site} alt="Avatar" />
-          <div class="container">
-            <h4><b>Site 2</b></h4>
-            <p>Architect & Engineer</p>
+        </a>
+        <a href="https://juliocesar1402.github.io/Pomodoro/#/" className="link-to-projects">
+          <div class="card">
+            <img src={pomodoro} alt="Avatar" />
+            <div class="container">
+              <h4><b>Pomodoro</b></h4>
+              <p>A website for time management</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div style={{display: "flex", width: "10%"}}>
         <div class="card">

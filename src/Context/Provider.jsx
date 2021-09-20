@@ -13,6 +13,11 @@ const Provider = ({ children }) => {
   const [contactNavBar, setContactNavBar] = useState(false);
   const [aboutNavBar, setAboutNavBar] = useState(false);
 
+  const [snakeDots, setSnakeDots] = useState([ [0, 0], [2, 0]]);
+  const [foodDots, setFoodDots] = useState([6, 8]);
+  const [direction, setDirection] = useState('RIGHT');
+  const [speed, setSpeed] = useState(200);
+
 
   const context = {
     homeActive,
@@ -31,7 +36,12 @@ const Provider = ({ children }) => {
     contactNavBar,
     setContactNavBar,
     aboutNavBar,
-    setAboutNavBar
+    setAboutNavBar,
+
+    snakeDots, setSnakeDots,
+    foodDots, setFoodDots,
+    direction, setDirection,
+    speed, setSpeed,
   }
 
   return (

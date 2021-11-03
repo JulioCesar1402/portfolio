@@ -1,33 +1,99 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import '../../Style/NavBar.css'
+import MainContext from '../../Context/MainContext'
 
 function NavBarRight() {
+  const {homeNavBar,
+    setHomeNavBar,
+    projectsNavBar,
+    setProjectsNavBar,
+    gamesNavBar,
+    setGamesNavBar,
+    contactNavBar,
+    setContactNavBar,
+    aboutNavBar,
+    setAboutNavBar} = useContext(MainContext);
+
+
+  const handleGetTitle = ({ target: { title } }) => {
+    switch (title) {
+      case "Home":
+        setHomeNavBar(true);
+        setGamesNavBar(false);
+        setProjectsNavBar(false);
+        setContactNavBar(false);
+        setAboutNavBar(false);
+        break;
+      case "Projects":
+        setHomeNavBar(false);
+        setProjectsNavBar(true);
+        setGamesNavBar(false);
+        setContactNavBar(false);
+        setAboutNavBar(false);
+        break;
+      case "Games":
+        setHomeNavBar(false);
+        setProjectsNavBar(false);
+        setGamesNavBar(true);
+        setProjectsNavBar(false);
+        setContactNavBar(false);
+        setAboutNavBar(false);
+        break;
+      case "Contact":
+        setHomeNavBar(false);
+        setGamesNavBar(false);
+        setProjectsNavBar(false);
+        setContactNavBar(true);
+        setAboutNavBar(false);
+        break;
+      case "About":
+        setHomeNavBar(false);
+        setGamesNavBar(false);
+        setProjectsNavBar(false);
+        setContactNavBar(false);
+        setAboutNavBar(true);
+        break;
+
+      default:
+        break;
+    }
+
+  };
   return (
-    <ul class="navbar-nav">
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">
-        <Link class="nav-link active" aria-current="page" to="/">
-          <i class='bx bx-home-alt bx-sm iconStyle'></i>
+    <ul className="navbarRight">
+      <li onClick={(e) => handleGetTitle(e)} className="navItem" title="Home">
+        <Link to="/" title="Home">
+          {!homeNavBar
+            ? <i className='bx bx-home bx-sm iconStyle' title="Home"></i>
+            : <i className='bx bxs-home bx-sm iconStyle'></i>}
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
-        <Link class="nav-link active" aria-current="page" to="/projects">
-        <i class='bx bx-folder bx-sm iconStyle'></i>
+      <li onClick={(e) => handleGetTitle(e)} className="navItem" title="Projects">
+        <Link to="/projects" title="Projects">
+          {!projectsNavBar
+              ? <i className='bx bx-folder bx-sm iconStyle' title="Projects"></i>
+              : <i className='bx bxs-folder bx-sm iconStyle'></i>}
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Games">
-        <Link class="nav-link active" aria-current="page" to="/games">
-          <i class='bx bx-joystick-button bx-sm iconStyle'></i>
+      <li onClick={(e) => handleGetTitle(e)} className="navItem" title="Games">
+        <Link to="/games"  title="Games">
+          {!gamesNavBar
+              ? <i className='bx bx-joystick-button bx-sm iconStyle' title="Games"></i>
+              : <i className='bx bxs-joystick-button bx-sm iconStyle'></i>}
         </Link>
       </li>
-      <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact">
-        <Link class="nav-link active" aria-current="page" to="/contact">
-          <i class='bx bx-paper-plane bx-sm iconStyle'></i>
+      <li onClick={(e) => handleGetTitle(e)} className="navItem" title="Contact">
+        <Link to="/contact" title="Contact">
+          {!contactNavBar
+              ? <i className='bx bx-paper-plane bx-sm iconStyle' title="Contact"></i>
+              : <i className='bx bxs-paper-plane bx-sm iconStyle'></i>}
         </Link>
       </li>
-      <li class="nav-item " data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
-        <Link class="nav-link active" aria-current="page" to="/about">
-          <i class='bx bx-user bx-sm iconStyle'></i>
+      <li onClick={(e) => handleGetTitle(e)} className="navItem" title="About">
+        <Link to="/about" title="About">
+          {!aboutNavBar
+              ? <i className='bx bx-user bx-sm iconStyle' title="About"></i>
+              : <i className='bx bxs-user bx-sm iconStyle'></i>}
         </Link>
       </li>
     </ul>
